@@ -80,6 +80,24 @@ OUTPUT:
 Full adder:
 verilog code:
 ~~~
+module full_add(sum,cout,a,b,c);
+input a,b,c;
+output sum,cout;
+  assign sum =(a^b^c);
+  assign cout=(a&b) | (b&c)| (a&c);
+
+endmodule
+~~~
+
+OUTPUT:
+![WhatsApp Image 2024-04-02 at 6 23 48 PM](https://github.com/Kirthana-2004/VLSI-LAB-EXP-1/assets/144320880/182f8bb1-2291-4859-9fbe-3e0969884f97)
+![WhatsApp Image 2024-04-02 at 6 23 52 PM (1)](https://github.com/Kirthana-2004/VLSI-LAB-EXP-1/assets/144320880/777c4867-914c-4ddc-9ae2-8fc0ddd3bc0c)
+
+Half subtractor:
+verilog code:
+~~~
+
+
 
 
 
