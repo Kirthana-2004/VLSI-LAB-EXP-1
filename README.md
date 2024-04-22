@@ -65,6 +65,24 @@ Half adder:
 verilog code:
 ~~~
 
+module half_add(s,c,a,b);
+input a,b;
+output s,c;
+or (s,a,b);
+and (c,a,b);
+endmodule
+~~~
+OUTPUT:
+![WhatsApp Image 2024-04-02 at 6 23 49 PM (1)](https://github.com/Kirthana-2004/VLSI-LAB-EXP-1/assets/144320880/91c95f40-4006-49ef-92ca-6229fdde7afe)
+![WhatsApp Image 2024-04-02 at 6 23 49 PM](https://github.com/Kirthana-2004/VLSI-LAB-EXP-1/assets/144320880/b9553a07-05af-42fd-ad87-e962b4702c28)
+
+
+Full adder:
+verilog code:
+~~~
+
+
+
 
 
 RESULT:
