@@ -57,6 +57,14 @@ endmodule
 ~~~
 
 OUTPUT:
+![WhatsApp Image 2024-04-02 at 6 23 56 PM](https://github.com/Kirthana-2004/VLSI-LAB-EXP-1/assets/144320880/2e72f13a-5668-4b72-9256-c60baa3df009)
+![WhatsApp Image 2024-04-02 at 6 23 52 PM](https://github.com/Kirthana-2004/VLSI-LAB-EXP-1/assets/144320880/963e0fae-826c-4ee6-93aa-6f6dbdd97ba1)
+
+
+Half adder:
+verilog code:
+~~~
+
 
 
 RESULT:
