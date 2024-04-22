@@ -112,7 +112,22 @@ OUTPUT:
 Full subtractor:
 verilog code:
 ~~~
+module full_subtractor(a,b,c,d,bout);
+input a,b,c;
+output d,bout;
+assign d = a^b^c;
+assign bout = (~a&b) | (~(a^b)&c);
+endmodule
+~~~
 
+OUTPUT:
+![WhatsApp Image 2024-04-22 at 2 31 18 PM](https://github.com/Kirthana-2004/VLSI-LAB-EXP-1/assets/144320880/e65684f5-b464-4ba9-ba16-6015b3620a1c)
+![WhatsApp Image 2024-04-02 at 6 23 53 PM (1)](https://github.com/Kirthana-2004/VLSI-LAB-EXP-1/assets/144320880/d799e4b7-6f10-4b1a-bb0d-d6119ea85f28)
+
+
+4 Bit Ripple Carry Adder:
+verilog code:
+~~~
 
 
 
