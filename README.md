@@ -188,7 +188,8 @@ endmodule
 
 OUTPUT:
 ![WhatsApp Image 2024-04-22 at 2 24 37 PM (1)](https://github.com/Kirthana-2004/VLSI-LAB-EXP-1/assets/144320880/ff3873d7-ae9c-4829-af92-a11e5215fc56)
-C:\Users\asus\Downloads\WhatsApp Image 2024-04-22 at 2.24.38 PM (1).jpeg
+![WhatsApp Image 2024-04-22 at 2 24 38 PM (1)](https://github.com/Kirthana-2004/VLSI-LAB-EXP-1/assets/144320880/ba1027cc-3d2b-473e-aebe-291e24ddd6cb)
+
 
 
 RESULT:
