@@ -128,6 +128,39 @@ OUTPUT:
 4 Bit Ripple Carry Adder:
 verilog code:
 ~~~
+module rippe_adder(S, Cout, X, Y,Cin);
+ input [3:0] X, Y;
+ input Cin;
+ output [3:0] S;
+ output Cout;
+ wire w1, w2, w3;
+ fulladder u1(S[0], w1,X[0], Y[0], Cin);
+ fulladder u2(S[1], w2,X[1], Y[1], w1);
+ fulladder u3(S[2], w3,X[2], Y[2], w2);
+ fulladder u4(S[3], Cout,X[3], Y[3], w3);
+endmodule
+module fulladder(S, Co, X, Y, Ci);
+  input X, Y, Ci;
+  output S, Co;
+  wire w1,w2,w3;
+  xor G1(w1, X, Y);
+  xor G2(S, w1, Ci);
+  and G3(w2, w1, Ci);
+  and G4(w3, X, Y);
+  or G5(Co, w2, w3);
+endmodule
+~~~
+
+OUTPUT:
+![WhatsApp Image 2024-04-22 at 2 24 44 PM](https://github.com/Kirthana-2004/VLSI-LAB-EXP-1/assets/144320880/e54ef17e-86e0-41ab-991d-e6211ad9c5a1)
+![WhatsApp Image 2024-04-22 at 2 24 38 PM](https://github.com/Kirthana-2004/VLSI-LAB-EXP-1/assets/144320880/9d4125ba-6e1f-42e5-9888-bf79bff0e44e)
+
+
+4 Bit Ripple Carry Adder:
+verilog code:
+~~~
+
+
 
 
 
