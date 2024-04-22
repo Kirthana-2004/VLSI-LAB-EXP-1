@@ -97,6 +97,25 @@ Half subtractor:
 verilog code:
 ~~~
 
+module half_subtractor(d,b0,a,b);
+input a,b;
+output d,b0;
+assign d = a^b;
+assign b0 = (~a)&b;
+endmodule
+~~~
+
+OUTPUT:
+![WhatsApp Image 2024-04-02 at 6 23 48 PM (1)](https://github.com/Kirthana-2004/VLSI-LAB-EXP-1/assets/144320880/0f992b52-92dd-4626-9e01-a50d12e6f778)
+![WhatsApp Image 2024-04-02 at 6 23 53 PM](https://github.com/Kirthana-2004/VLSI-LAB-EXP-1/assets/144320880/062966a5-d357-4b78-bf28-1308f37322cd)
+
+Full subtractor:
+verilog code:
+~~~
+
+
+
+
 
 
 
