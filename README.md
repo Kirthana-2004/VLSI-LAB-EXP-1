@@ -156,12 +156,43 @@ OUTPUT:
 ![WhatsApp Image 2024-04-22 at 2 24 38 PM](https://github.com/Kirthana-2004/VLSI-LAB-EXP-1/assets/144320880/9d4125ba-6e1f-42e5-9888-bf79bff0e44e)
 
 
-4 Bit Ripple Carry Adder:
+8 Bit Ripple Carry Adder:
 verilog code:
 ~~~
+module ripplemod(a, b, cin, sum, cout);
+input [07:0] a;
+input [07:0] b;
+input cin;
+output [7:0]sum;
+output cout;
+wire[6:0] c;
+fulladd a1(a[0],b[0],cin,sum[0],c[0]);
+fulladd a2(a[1],b[1],c[0],sum[1],c[1]);
+fulladd a3(a[2],b[2],c[1],sum[2],c[2]);
+fulladd a4(a[3],b[3],c[2],sum[3],c[3]);
+fulladd a5(a[4],b[4],c[3],sum[4],c[4]);
+fulladd a6(a[5],b[5],c[4],sum[5],c[5]);
+fulladd a7(a[6],b[6],c[5],sum[6],c[6]);
+fulladd a8(a[7],b[7],c[6],sum[7],cout);
+endmodule
+module fulladd(a, b, cin, sum, cout);
+input a;
+input b;
+input cin;
+output sum;
+output cout;
+assign sum=(a^b^cin);
+assign cout=((a&b)|(b&cin)|(a&cin));
+endmodule
+~~~
+
+OUTPUT:
+![WhatsApp Image 2024-04-22 at 2 24 37 PM (1)](https://github.com/Kirthana-2004/VLSI-LAB-EXP-1/assets/144320880/ff3873d7-ae9c-4829-af92-a11e5215fc56)
+C:\Users\asus\Downloads\WhatsApp Image 2024-04-22 at 2.24.38 PM (1).jpeg
 
 
-
+RESULT:
+Hence the simulation and synthesis of full adder,full subtractor,half adder,half subtractor,logic gates,ripplecarryadder_4bit,ripplecarryadder_8bit using vivado 2023.2. was successfully simulated using vivado.2023.3.
 
 
 
